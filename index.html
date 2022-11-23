@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>aespa entertainment</title>
+
+    <!--사이트의 icon을 자유롭게 사용하기 위해서-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+
+    <!-- font style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.transit.min.js"></script>
+
+    <script>
+      function goToAlbum() {
+        alert("안녕하세요");
+      }
+    </script>
+
+    <!-- SWIPER -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+
+  <body>
+    <div class="wrap">
+      <header>
+        <ul class="menu">
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">AESPA</a></li>
+          <li><a href="#">CAREERS</a></li>
+          <li><a href="#">ALBUM</a></li>
+          <li>
+            <audio autoplay controls loop style="width: 100px">
+              <source
+                src="./aespa monster (Illusion) MV.mp3"
+                type="audio/mpeg"
+              />
+            </audio>
+          </li>
+        </ul>
+
+        <ul class="util">
+          <li>
+            <input
+              type="search"
+              id="search_icon"
+              placeholder="검색어를 입력하시오."
+            />
+            <div class="material-icons" id="material-icons_search">search</div>
+          </li>
+          <li><a href="#">LANGUAGE</a></li>
+          <li><a href="#">SNS</a></li>
+          <li>
+            <button
+              onclick="goToProfile()"
+              class="goTOProfile"
+              id="logOutButton"
+            >
+              프로필 관리
+            </button>
+          </li>
+          <li>
+            <button
+              onclick="logout()"
+              type="button"
+              class="logOut"
+              id="logOutButton"
+            >
+              로그아웃
+            </button>
+          </li>
+        </ul>
+      </header>
+
+      <section class="news">
+        <!-- Swiper -->
+        <div class="swiper1 inSwiper1">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="text_wrap">
+                <h1>GIRLS REMIX</h1>
+
+                <button type="button" class="readMe">Read Me</button>
+              </div>
+              <!-- text_wrap end -->
+            </div>
+            <div class="swiper-slide">
+              <div class="text_wrap">
+                <h1>GIRLS REMIX</h1>
+
+                <button type="button" class="readMe">Read Me</button>
+              </div>
+              <!-- text_wrap end -->
+            </div>
+            <div class="swiper-slide">
+              <div class="text_wrap">
+                <h1>GIRLS REMIX</h1>
+
+                <button type="button" class="readMe">Read Me</button>
+              </div>
+              <!-- text_wrap end -->
+            </div>
+            <div class="swiper-slide">
+              <div class="text_wrap">
+                <h1>GIRLS REMIX</h1>
+
+                <button type="button" class="readMe">Read Me</button>
+              </div>
+              <!-- text_wrap end -->
+            </div>
+            <div class="swiper-slide">
+              <div class="text_wrap">
+                <h1>GIRLS REMIX</h1>
+
+                <button type="button" class="readMe">Read Me</button>
+              </div>
+              <!-- text_wrap end -->
+            </div>
+          </div>
+
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <!-- Swiper -->
+        <div class="swiper2 inSwiper2">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="text_wrap">
+                <h1>GIRLS</h1>
+
+                <button type="button" class="readMe">Read Me</button>
+              </div>
+              <!-- text_wrap end -->
+            </div>
+            <div class="swiper-slide">
+              <div class="text_wrap">
+                <h1>GIRLS</h1>
+
+                <button type="button" class="readMe">Read Me</button>
+              </div>
+              <!-- text_wrap end -->
+            </div>
+            <div class="swiper-slide">
+              <div class="text_wrap">
+                <h1>GIRLS</h1>
+
+                <button type="button" class="readMe">Read Me</button>
+              </div>
+              <!-- text_wrap end -->
+            </div>
+            <div class="swiper-slide">
+              <div class="text_wrap">
+                <h1>GIRLS</h1>
+
+                <button type="button" class="readMe">Read Me</button>
+              </div>
+              <!-- text_wrap end -->
+            </div>
+            <div class="swiper-slide">
+              <div class="text_wrap">
+                <h1>GIRLS</h1>
+
+                <button type="button" class="readMe">Read Me</button>
+              </div>
+              <!-- text_wrap end -->
+            </div>
+          </div>
+
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <!-- Swiper -->
+        <div class="swiper3 inSwiper3">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="text_wrap">
+                <h1>DREAMS COME TRUE</h1>
+
+                <button type="button" class="readMe">Read Me</button>
+              </div>
+              <!-- text_wrap end -->
+            </div>
+            <div class="swiper-slide">
+              <div class="text_wrap">
+                <h1>DREAMS COME TRUE</h1>
+
+                <button type="button" class="readMe">Read Me</button>
+              </div>
+              <!-- text_wrap end -->
+            </div>
+            <div class="swiper-slide">
+              <div class="text_wrap">
+                <h1>DREAMS COME TRUE</h1>
+
+                <button type="button" class="readMe">Read Me</button>
+              </div>
+              <!-- text_wrap end -->
+            </div>
+            <div class="swiper-slide">
+              <div class="text_wrap">
+                <h1>DREAMS COME TRUE</h1>
+
+                <button type="button" class="readMe">Read Me</button>
+              </div>
+              <!-- text_wrap end -->
+            </div>
+            <div class="swiper-slide">
+              <div class="text_wrap">
+                <h1>DREAMS COME TRUE</h1>
+
+                <button type="button" class="readMe">Read Me</button>
+              </div>
+              <!-- text_wrap end -->
+            </div>
+          </div>
+
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <!-- news end -->
+
+      <section class="about">
+        <div class="container">
+          <button onclick="goToAlbum();" type="button" class="goAlbum">
+            CLICK
+          </button>
+
+          <div class="logo">
+            <h1>AESPA IS QUEEN</h1>
+            <span
+              class="material-icons"
+              id="material-icons_twinkle"
+              style="color: white"
+            >
+              auto_awesome
+            </span>
+          </div>
+          <!-- logo end -->
+        </div>
+        <!-- container end -->
+      </section>
+      <!-- about end -->
+
+      <section class="mypost">
+        <h1>INVITE</h1>
+        <div class="container">
+          <div class="postWrite">
+            <div class="form-floating mb-3">
+              <img id="profileImg" src="./image/4.jpg" />
+              <span id="nickname">닉네임</span>
+            </div>
+            <div class="form-floating">
+              <textarea
+                class="form-control"
+                placeholder="에스파에게 하고 싶은 말을 남겨주세요"
+                id="comment"
+              ></textarea>
+            </div>
+
+            <button
+              onclick="save_comment(event)"
+              type="button"
+              class="commentButton"
+            >
+              응원 남기기
+            </button>
+          </div>
+          <!-- postWrite end -->
+        </div>
+        <!-- container end -->
+      </section>
+
+      <section class="all_post">
+        <div class="container">
+          <div id="all_post_list" class="all_post_list"></div>
+        </div>
+      </section>
+
+      <footer></footer>
+    </div>
+    <!-- wrap end -->
+  </body>
+</html>

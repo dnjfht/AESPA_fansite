@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mypage</title>
+
+    <link rel="stylesheet" href="/css/mypage.css" />
+
+    <!--사이트의 icon을 자유롭게 사용하기 위해서-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+
+    <!-- font style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="mypage">
+      <header>
+        <ul class="menu">
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">AESPA</a></li>
+          <li><a href="#">CAREERS</a></li>
+          <li><a href="#">ALBUM</a></li>
+          <li>
+            <audio autoplay controls loop style="width: 100px">
+              <source
+                src="/aespa monster (Illusion) MV.mp3"
+                type="audio/mpeg"
+              />
+            </audio>
+          </li>
+        </ul>
+
+        <ul class="util">
+          <li>
+            <input
+              type="search"
+              id="search_icon"
+              placeholder="검색어를 입력하시오."
+            />
+            <div class="material-icons" id="material-icons_search">search</div>
+          </li>
+          <li><a href="#">LANGUAGE</a></li>
+          <li><a href="#">SNS</a></li>
+          <li>
+            <button
+              onclick="goToProfile()"
+              class="goTOProfile"
+              id="logOutButton"
+            >
+              프로필 관리
+            </button>
+          </li>
+          <li>
+            <button
+              onclick="logout()"
+              type="button"
+              class="logOut"
+              id="logOutButton"
+            >
+              로그아웃
+            </button>
+          </li>
+        </ul>
+      </header>
+
+      <div class="mypage_profile">
+        <form id="profileForm" onsubmit="changeProfile(event)">
+          <label id="imgLabel" for="imgInput">
+            <img id="profileView" src="/image/16.jpg" />
+            <input
+              onchange="onFileChange(event)"
+              id="imgInput"
+              type="file"
+              accept="images/*"
+            />
+          </label>
+          <div class="write_nickname">
+            <div>
+              <input
+                id="profileNickname"
+                type="text"
+                placeholder="현재 닉네임"
+                value=""
+              />
+            </div>
+            <br />
+            <input id="profileBtn" type="submit" value="변경" />
+          </div>
+          <!-- write_nickname end -->
+        </form>
+
+        <div class="my_favorite">
+          <div class="favorite_title">
+            <p>에스파 띵곡</p>
+            <div class="material-icons" id="material-icons_favorite">
+              favorite_border
+            </div>
+          </div>
+          <!-- favorite_title end -->
+
+          <ul class="favorite_list">
+            <li><a href="#">Next Level</a></li>
+            <li><a href="#">도깨비불</a></li>
+            <li><a href="#">Girls</a></li>
+            <li><a href="#">Savage</a></li>
+            <li><a href="#">Life Is Too Short</a></li>
+            <li><a href="#">Black Mamba</a></li>
+          </ul>
+          <!-- favorite_list end -->
+        </div>
+        <!-- my_favorite end -->
+      </div>
+
+      <p align="center" class="mypost">내포스트</p>
+
+      <div id="all_post_list"></div>
+    </div>
+  </body>
+</html>
